@@ -13,4 +13,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hell Yea!" />
+
+    <TextView
+	andasdasdroid:id="id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hell Yea!" />
 </RelativeLayout>
