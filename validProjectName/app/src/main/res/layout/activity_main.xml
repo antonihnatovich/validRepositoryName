@@ -9,8 +9,35 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.nothingwrotehere.validprojectname.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hell Yea!" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/blueButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.55"
+            android:background="#578ec5"
+            android:clickable="true"
+            android:baselineAlignBottom="true"
+            android:visibility="visible"
+            style="@style/Base.V22.Theme.AppCompat" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/redButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.55"
+            android:background="#bf2727"
+            android:clickable="true"
+            android:baselineAlignBottom="true"
+            style="@style/Base.Theme.AppCompat" />
+    </LinearLayout>
 </RelativeLayout>
