@@ -39,6 +39,12 @@
             android:visibility="visible"
             style="@style/Base.V22.Theme.AppCompat" />
 
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/txt"
+            android:id="@+id/btnAct2"
+            />
 
     </LinearLayout>
 </RelativeLayout>
