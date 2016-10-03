@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 Button btnAct2;
     TextView textViewSavedState;
     EditText editTextEditState;
+    private static final String STATE_SAVED = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +35,7 @@ Button btnAct2;
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
 
-        String save = savedInstanceState.getString("saved_state");
+        String save = savedInstanceState.getString(STATE_SAVED);
 
         if(save == null){
             Toast.makeText(MainActivity.this, "onRestoreInstanceState:\nNo state saved",
@@ -52,7 +53,7 @@ Button btnAct2;
         super.onSaveInstanceState(outState);
 
         String stateToSave = editTextEditState.getText().toString();
-        outState.putString("saved_state", stateToSave);
+        outState.putString(STATE_SAVED, stateToSave);
 
         Toast.makeText(MainActivity.this, "onSaveInstanceState : \nsaved state "+stateToSave,
                 Toast.LENGTH_LONG).show();
