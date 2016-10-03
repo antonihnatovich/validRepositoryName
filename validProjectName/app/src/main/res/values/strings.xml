@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">HopHey</string>
-    <string name = "txt">View 2</string>
+    <string name = "txt">Second view</string>
 </resources>
